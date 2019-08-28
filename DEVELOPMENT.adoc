@@ -1,4 +1,4 @@
-= Development history
+= Development Instructions
 Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
 :toc:
 :sectanchors:
@@ -6,9 +6,42 @@ Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
 :source-highlighter: highlight.js
 include::uris/attributes.adoc[]
 
-This doc gives you some information about the commands did to build this project.
+This doc gives you some instructions about how to develop this project including some link:#git-commits[history of commands you can use to build this project from scratch].
 
-== Added DEVELOPMENT.adoc and the code to build the asciidoc documents
+== Prerequisites
+
+[#git-commits]
+== Git commits
+
+=== Configured to deploy on GitHub Pages
+
+Instruction to deploy the documents:
+
+[source,bash]
+----
+yarn deploy
+----
+
+New instruction to build the documents:
+
+[source,bash]
+----
+yarn build-docs
+----
+
+Created link:{basedir}/index.adoc[].
+
+Edited link:{basedir}/.gitignore[], link:{basedir}/package.json[], link:{basedir}/README.adoc[] and link:{basedir}/DEVELOPMENT.adoc[].
+
+Added {gh-pages} dependency:
+
+[source,bash]
+----
+yarn add --dev gh-pages
+----
+
+[#0936]
+=== Added DEVELOPMENT.adoc and the code to build the asciidoc documents
 
 Added {asciidoctor-js} dependencies:
 
@@ -18,7 +51,7 @@ yarn add --dev @asciidoctor/core @asciidoctor/cli highlight.js
 git add package.json
 ----
 
-Edited `scripts` session in link:package.json[]:
+Edited `scripts` session in link:{basedir}/package.json[]:
 
 [source,bash]
 ----
@@ -32,7 +65,7 @@ git diff package.json > diffs/package.json.01.diff
 include::diffs/package.json.01.diff[]
 ----
 
-Edited link:README.adoc[]:
+Edited link:{basedir}/README.adoc[]:
 
 [source,bash]
 ----
@@ -45,14 +78,14 @@ git diff README.adoc > diffs/README.adoc.01.diff
 include::diffs/README.adoc.01.diff[]
 ----
 
-Created the directory `uris` and the file link:uris/attributes.adoc[] with the following contents:
+Created the directory `uris` and the file link:{basedir}/uris/attributes.adoc[] with the following contents:
 
 [source,asciidoc]
 ----
 include::uris/attributes.adoc[]
 ----
 
-Edited link:.gitignore[].
+Edited link:{basedir}/.gitignore[].
 
 ----
 git diff .gitignore > diffs/.gitignore.01.diff
@@ -64,7 +97,7 @@ git diff .gitignore > diffs/.gitignore.01.diff
 include::diffs/.gitignore.01.diff[]
 ----
 
-Created the file link:DEVELOPMENT.adoc[] (this file).
+Created the file link:{basedir}/DEVELOPMENT.adoc[] (this file).
 
 Tested the generation of docs (`README.html` and `DEVELOPMENT.html`) with the following command:
 
@@ -81,16 +114,16 @@ git commit -m 'Added DEVELOPMENT.adoc and the code to build the asciidoc documen
 ----
 
 [#2f14]
-== Initial commit (2f14)
+=== Initial commit (2f14)
 
-Created link:package.json[]:
+Created link:{basedir}/package.json[]:
 
 [source,bash]
 ----
 yarn init -y
 ----
 
-Created link:.gitignore[]:
+Created link:{basedir}/.gitignore[]:
 
 [source,bash]
 ----

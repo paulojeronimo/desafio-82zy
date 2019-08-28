@@ -1,0 +1,6 @@
+= Desafio 82zy
+Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
+
+link:README.html[README] do projeto.
+
+link:DEVELOPMENT.html[Instruções de desenvolvimento] (em inglês).

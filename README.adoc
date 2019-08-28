@@ -4,7 +4,7 @@ include::uris/attributes.adoc[]
 
 {TiddlyWiki} __criptografado__ do *Desafio 82zy*.
 
-*Página pública*: https://paulojeronimo.github.io/desafio-82zy
+*Página pública*: https://paulojeronimo.github.io/desafio-82zy/index.html
 
 *Senha*: Solicite-me pelo WhatsApp (+55 61 998 073 864).
 
@@ -17,10 +17,10 @@ yarn start
 
 Open http://localhost:8000.
 
-*Instruções de desenvolvimento:* link:DEVELOPMENT.adoc[]
+*Instruções de desenvolvimento:* link:{basedir}/DEVELOPMENT.adoc[]
 
 *Geração local dos arquivos README.html e DEVELOPMENT.html*:
 
 ----
-yarn run build-docs
+yarn build-docs
 ----

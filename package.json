@@ -6,9 +6,11 @@
   "devDependencies": {
     "@asciidoctor/cli": "^3.0.1",
     "@asciidoctor/core": "^2.0.3",
+    "gh-pages": "^2.1.1",
     "highlight.js": "^9.15.10"
   },
   "scripts": {
-    "build-docs": "asciidoctor *.adoc"
-  }  
+    "build-docs": "asciidoctor -a linkcss -a basedir=.. -D dist *.adoc",
+    "deploy": "yarn run build-docs && gh-pages -d dist"
+  }
 }
