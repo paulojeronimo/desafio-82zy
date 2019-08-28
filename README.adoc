@@ -1,0 +1,18 @@
+= Desafio 82zy
+Paulo Jerônimo <paulojeronimo@gmail.com>
+:TiddlyWiki: https://tiddlywiki.com[TiddlyWiki]
+:yarn: https://yarnpkg.com[yarn]
+
+{TiddlyWiki} __criptografado__ do *Desafio 82zy*.
+
+*Página pública*: https://paulojeronimo.github.io/desafio-82zy
+
+*Senha*: Solicite-me pelo WhatsApp (+55 61 998 073 864).
+
+*Execução local* (requer a instalação do {yarn}):
+
+----
+$ yarn install
+$ yarn start
+$ open http://localhost:8000
+----
