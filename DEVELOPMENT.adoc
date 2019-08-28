@@ -1,0 +1,109 @@
+= Development history
+Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
+:toc:
+:sectanchors:
+:sectlinks:
+:source-highlighter: highlight.js
+include::uris/attributes.adoc[]
+
+This doc gives you some information about the commands did to build this project.
+
+== Added DEVELOPMENT.adoc and the code to build the asciidoc documents
+
+Added {asciidoctor-js} dependencies:
+
+[source,bash]
+----
+yarn add --dev @asciidoctor/core @asciidoctor/cli highlight.js
+git add package.json
+----
+
+Edited `scripts` session in link:package.json[]:
+
+[source,bash]
+----
+mkdir -p diffs
+git diff package.json > diffs/package.json.01.diff
+----
+
+[source,diff]
+.diffs/package.json.01.diff:
+----
+include::diffs/package.json.01.diff[]
+----
+
+Edited link:README.adoc[]:
+
+[source,bash]
+----
+git diff README.adoc > diffs/README.adoc.01.diff
+----
+
+[source,diff]
+.diffs/README.adoc.01.diff
+----
+include::diffs/README.adoc.01.diff[]
+----
+
+Created the directory `uris` and the file link:uris/attributes.adoc[] with the following contents:
+
+[source,asciidoc]
+----
+include::uris/attributes.adoc[]
+----
+
+Edited link:.gitignore[].
+
+----
+git diff .gitignore > diffs/.gitignore.01.diff
+----
+
+[source,diff]
+.diffs/.gitignore.01.diff
+----
+include::diffs/.gitignore.01.diff[]
+----
+
+Created the file link:DEVELOPMENT.adoc[] (this file).
+
+Tested the generation of docs (`README.html` and `DEVELOPMENT.html`) with the following command:
+
+----
+yarn run build-docs
+----
+
+Commited the changes:
+
+[source,diff]
+----
+git add -A
+git commit -m 'Added DEVELOPMENT.adoc and the code to build the asciidoc documents'
+----
+
+[#2f14]
+== Initial commit (2f14)
+
+Created link:package.json[]:
+
+[source,bash]
+----
+yarn init -y
+----
+
+Created link:.gitignore[]:
+
+[source,bash]
+----
+echo -e "README.html\nnode_modules" > .gitignore
+----
+
+Created the git repo and did the first commit:
+
+[source,bash]
+----
+git init
+git add -A
+git commit -y "Initial commit"
+git remote add origin git@github.com:paulojeronimo/desafio-82zy.git
+git push -u origin master
+----

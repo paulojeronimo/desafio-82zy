@@ -2,5 +2,13 @@
   "name": "desafio-82zy",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@asciidoctor/cli": "^3.0.1",
+    "@asciidoctor/core": "^2.0.3",
+    "highlight.js": "^9.15.10"
+  },
+  "scripts": {
+    "build-docs": "asciidoctor *.adoc"
+  }  
 }

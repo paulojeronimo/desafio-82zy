@@ -1,0 +1,14 @@
+diff --git a/package.json b/package.json
+index 9af5d3e..a726fbe 100644
+--- a/package.json
++++ b/package.json
+@@ -7,5 +7,8 @@
+     "@asciidoctor/cli": "^3.0.1",
+     "@asciidoctor/core": "^2.0.3",
+     "highlight.js": "^9.15.10"
+-  }
++  },
++  "scripts": {
++    "build-docs": "asciidoctor *.adoc"
++  }  
+ }

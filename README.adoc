@@ -1,7 +1,6 @@
 = Desafio 82zy
-Paulo Jerônimo <paulojeronimo@gmail.com>
-:TiddlyWiki: https://tiddlywiki.com[TiddlyWiki]
-:yarn: https://yarnpkg.com[yarn]
+Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
+include::uris/attributes.adoc[]
 
 {TiddlyWiki} __criptografado__ do *Desafio 82zy*.
 
@@ -12,7 +11,16 @@ Paulo Jerônimo <paulojeronimo@gmail.com>
 *Execução local* (requer a instalação do {yarn}):
 
 ----
-$ yarn install
-$ yarn start
-$ open http://localhost:8000
+yarn install
+yarn start
+----
+
+Open http://localhost:8000.
+
+*Instruções de desenvolvimento:* link:DEVELOPMENT.adoc[]
+
+*Geração local dos arquivos README.html e DEVELOPMENT.html*:
+
+----
+yarn run build-docs
 ----

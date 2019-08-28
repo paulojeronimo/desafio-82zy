@@ -1,2 +1,3 @@
-README.html
+*.html
 node_modules
+yarn-error.log
