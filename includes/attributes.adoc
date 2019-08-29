@@ -1,0 +1,3 @@
+:github-repo: user/repo
+:github-repo-uri: https://github.com/{github-repo}
+:commits-uri: {github-repo-uri}/commit

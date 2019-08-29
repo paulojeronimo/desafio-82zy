@@ -1,6 +1,33 @@
 = Desafio 82zy
 Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
+:basedir: .
+:distdir: .
+include::uris/attributes.adoc[]
+include::includes/attributes.adoc[]
+include::includes/files.adoc[]
 
-link:README.html[README] do projeto.
+{TiddlyWiki} __criptografado__ do *Desafio 82zy*.
 
-link:DEVELOPMENT.html[Instruções de desenvolvimento] (em inglês).
+*Repositório GitHub deste projeto*: {github-repo-uri}
+
+*Wiki*: {wiki_html}
+
+*Senha do Wiki*: Solicite-me pelo WhatsApp (+55 61 998 073 864).
+
+*Geração local dos documentos* (requer a instalação do {yarn}):
+
+----
+yarn install
+yarn build-docs
+open dist/index.html
+----
+
+*Instruções de desenvolvimento:* {DEVELOPMENT_html}.
+
+*Publicação no GitHub Pages:*
+
+----
+cp .env.sample .env
+vim .env
+yarn deploy
+----

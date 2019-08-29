@@ -1,5 +1,4 @@
-:basedir: .
 :TiddlyWiki: https://tiddlywiki.com[TiddlyWiki^]
 :yarn: https://yarnpkg.com[yarn^]
 :asciidoctor-js: https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js^]
-:gh-pages: https://github.com/tschaub/gh-pages
+:gh-pages: https://github.com/tschaub/gh-pages[gh-pages^]

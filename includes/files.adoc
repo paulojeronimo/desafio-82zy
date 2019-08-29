@@ -1,0 +1,11 @@
+// Source files
+:index_adoc: link:{basedir}/index.adoc[index.adoc^]
+:uris_attributes_adoc: link:{basedir}/uris/attributes.adoc[uris/attributes.adoc^]
+:_gitignore: link:{basedir}/.gitignore[.gitignore^]
+:DEVELOPMENT_adoc: link:{basedir}/DEVELOPMENT.adoc[DEVELOPMENT.adoc^]
+:package_json: link:{basedir}/package.json[package.json^]
+:README_adoc: link:{basedir}/README.adoc[README.adoc^]
+
+// Generated files are relative to {distdir}
+:DEVELOPMENT_html: link:{distdir}/DEVELOPMENT.html[DEVELOPMENT.html^]
+:wiki_html: link:{distdir}/wiki.html[wiki.html^]
