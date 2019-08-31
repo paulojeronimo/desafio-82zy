@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.9">
+<meta name="author" content="Paulo Jerônimo">
+<title>Arch Linux</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Arch Linux</h1>
+<div class="details">
+<span id="author" class="author">Paulo Jerônimo</span><br>
+<span id="email" class="email"><a href="mailto:paulojeronimo@gmail.com">paulojeronimo@gmail.com</a></span><br>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_local_mirror_configuration_only_if_you_have_one">1. Local mirror configuration (ONLY IF YOU HAVE ONE)</a></li>
+<li><a href="#_required_packages_installation">2. Required packages installation</a></li>
+<li><a href="#_dotfiles_installation">3. dotfiles installation</a></li>
+<li><a href="#_node_installation">4. Node installation</a></li>
+<li><a href="#_yarn_installation">5. Yarn installation</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_local_mirror_configuration_only_if_you_have_one">1. Local mirror configuration (ONLY IF YOU HAVE ONE)</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ echo 'Server = http://10.0.2.2:8000/$repo/os/$arch' | \
+sudo tee /etc/pacman.d/mirrorlist
+$ sudo pacman -Syy</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_required_packages_installation">2. Required packages installation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ sudo pacman --noconfirm -S lsb-release vim git libnghttp2</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The package <code>libnghttp2</code> is required to fix a <a href="https://bugs.archlinux.org/task/63547">bug</a> after <code>nodejs</code> package installation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dotfiles_installation">3. dotfiles installation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ REPO=paulojeronimo/dotfiles &amp;&amp; git clone https://github.com/$REPO &amp;&amp; cd ${REPO##*/}
+$ ./install
+$ source ~/.bashrc</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_node_installation">4. Node installation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ sudo pacman --noconfirm -S nodejs
+$ node -v
+v12.9.1</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_yarn_installation">5. Yarn installation</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>$ sudo pacman --noconfirm -S yarn
+$ yarn -v
+1.17.3</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-08-30 16:18:09 -0300
+</div>
+</div>
+</body>
+</html>
