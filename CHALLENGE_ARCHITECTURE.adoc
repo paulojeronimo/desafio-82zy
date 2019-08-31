@@ -25,7 +25,8 @@ include::uris/attributes.adoc[]
 
 . {Gatsby}
 ** https://www.youtube.com/watch?v=8t0vNu2fCCM
-*** 
+*** https://github.com/agungTuanany/gatsby-bootcamp
+*** https://github.com/pedropcruz/gatsby-bootcamp
 . {React}
 ** https://www.udemy.com/react-2nd-edition
 ** https://www.udemy.com/react-redux/
