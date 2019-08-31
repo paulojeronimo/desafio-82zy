@@ -1,0 +1,47 @@
+= Arch Linux
+Paulo Jerônimo <paulojeronimo@gmail.com>
+:toc:
+:numbered:
+
+== Local mirror configuration (ONLY IF YOU HAVE ONE)
+
+----
+$ echo 'Server = http://10.0.2.2:8000/$repo/os/$arch' | \
+sudo tee /etc/pacman.d/mirrorlist
+$ sudo pacman -Syy
+----
+
+== Required packages installation
+
+----
+$ sudo pacman --noconfirm -S lsb-release vim git libnghttp2
+----
+
+[NOTE]
+====
+The package `libnghttp2` is required to fix a https://bugs.archlinux.org/task/63547[bug] after `nodejs` package installation.
+====
+
+== dotfiles installation
+
+----
+$ REPO=paulojeronimo/dotfiles && git clone https://github.com/$REPO && cd ${REPO##*/}
+$ ./install
+$ source ~/.bashrc
+----
+
+== Node installation
+
+----
+$ sudo pacman --noconfirm -S nodejs
+$ node -v
+v12.9.1
+----
+
+== Yarn installation
+
+----
+$ sudo pacman --noconfirm -S yarn
+$ yarn -v
+1.17.3
+----

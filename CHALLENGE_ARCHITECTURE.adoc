@@ -1,0 +1,31 @@
+= Challenge Architecture
+Paulo Jerônimo <paulojeronimo@gmail.com>, {localdatetime}
+:toc:
+:basedir: .
+:distdir: .
+include::uris/attributes.adoc[]
+
+== Languages, Tools and Frameworks we are using
+
+* Frontend
+** {ES6}
+** {Gatsby}
+*** {React}, {ReactBootstrap}, {GraphQL}
+*** {GraphQL}
+** {Web3j}
+* Backend
+** {TruffleSuite}
+** {Docker}
+** {DockerCompose}
+** {Solidity}
+** {Geth}
+** {AzureBlockchainDevKit}
+
+== Frontend study trail
+
+. {Gatsby}
+** https://www.youtube.com/watch?v=8t0vNu2fCCM
+*** 
+. {React}
+** https://www.udemy.com/react-2nd-edition
+** https://www.udemy.com/react-redux/

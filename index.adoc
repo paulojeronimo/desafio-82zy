@@ -17,17 +17,17 @@ include::includes/files.adoc[]
 *Geração local dos documentos* (requer a instalação do {yarn}):
 
 ----
-yarn install
-yarn build-docs
-open dist/index.html
+$ yarn install
+$ cp .env.sample .env
+$ yarn build-docs
 ----
+
+Open `dist/index.html`
 
 *Instruções de desenvolvimento:* {DEVELOPMENT_html}.
 
 *Publicação no GitHub Pages:*
 
 ----
-cp .env.sample .env
-vim .env
-yarn deploy
+$ yarn deploy
 ----

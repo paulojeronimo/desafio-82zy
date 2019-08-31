@@ -10,7 +10,7 @@
     "highlight.js": "^9.15.10"
   },
   "scripts": {
-    "build-docs": "source .env && asciidoctor -a linkcss -a basedir=$BASEDIR -a github-repo=$GITHUB_REPO -D dist *.adoc",
+    "build-docs": "source ./.env && asciidoctor -a linkcss -a basedir=$BASEDIR -a github-repo=$GITHUB_REPO -D dist *.adoc",
     "deploy": "export ENV=github && yarn build-docs && gh-pages -d dist"
   }
 }
