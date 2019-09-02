@@ -7,26 +7,28 @@ include::uris/attributes.adoc[]
 
 == Languages, Tools and Frameworks we are using
 
-* Frontend
-** {ES6}
-** {Gatsby}
-*** {React}, {ReactBootstrap}, {GraphQL}
-*** {GraphQL}
-** {Web3j}
-* Backend
-** {TruffleSuite}
-** {Docker}
-** {DockerCompose}
-** {Solidity}
-** {Geth}
-** {AzureBlockchainDevKit}
+* Languages: {Bash}, JavaScript ({ES6}), {Solidity}.
+* Tools and Frameworks: {Gatsby}, {React}, {ReactBootstrap}, {GraphQL}, {Metamask}, {Web3j}, {TruffleSuite} ({Truffle}, {Ganache}), {Docker}, {DockerCompose}, {Geth}, {AzureBlockchainDevKit}.
 
-== Frontend study trail
+== Study trail
 
 . {Gatsby}
-** https://www.youtube.com/watch?v=8t0vNu2fCCM
-*** https://github.com/agungTuanany/gatsby-bootcamp
-*** https://github.com/pedropcruz/gatsby-bootcamp
+.. YouTube videos:
+... https://www.youtube.com/watch?v=8t0vNu2fCCM
+.... https://github.com/agungTuanany/gatsby-bootcamp
+.... https://github.com/pedropcruz/gatsby-bootcamp
 . {React}
-** https://www.udemy.com/react-2nd-edition
-** https://www.udemy.com/react-redux/
+.. YouTube videos:
+... https://www.youtube.com/watch?v=qI43yX1QeLM
+... https://www.youtube.com/watch?v=Ke90Tje7VS0
+.... https://github.com/fishstick22/mastering-react-mosh
+.... https://github.com/shravanz/React-mosh-crash/
+.. Udemy courses:
+... https://www.udemy.com/react-2nd-edition
+... https://www.udemy.com/react-redux/
+. {Blockchain} development with {React}, {Ethereum}, {Solidity}, {Web3j}, {TruffleSuite}:
+.. YouTube videos:
+... https://www.youtube.com/watch?v=VH9Q2lf2mNo
+.... https://github.com/dappuniversity/marketplace
+.... https://github.com/dappuniversity/starter_kit
+... https://www.youtube.com/playlist?list=PLS5SEs8ZftgVI1LeNhgYO1Y1Gd2hhPc3F
