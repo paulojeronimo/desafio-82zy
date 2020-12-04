@@ -7,7 +7,7 @@
     "@asciidoctor/cli": "^3.0.1",
     "@asciidoctor/core": "^2.0.3",
     "gh-pages": "^2.1.1",
-    "highlight.js": "^9.15.10"
+    "highlight.js": "^10.4.1"
   },
   "scripts": {
     "build-docs": "source ./.env && asciidoctor -a linkcss -a basedir=$BASEDIR -a github-repo=$GITHUB_REPO -D dist *.adoc",
